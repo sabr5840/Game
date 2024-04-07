@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .toolbar {
+    display: flex;
+    background: #4289b5; 
+    justify-content: center;
+  }
+  
+  .toolbar > div {
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .toolbar > div.button {
+    padding: 20px 10px;
+  }
+  
+  .ml-auto {
+    margin-left: auto;
+  }
+  
+  .mr-auto {
+    margin-right: auto;
+  }
+  
+  h1 {
+    line-height: 50px;
+    font-size: 50px;
+    margin: 0px;
+    color: #ffffff;
+  }
+  
+  .subheading {
+    color: #ffffff; 
+    font-size: 1rem; 
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center; 
+    opacity: 0.8; 
+  }
+  
+  p, button, input {
+    font-size: 1.25em;
+    line-height: 30px;
+    background: none;
+    color: #ffffff;
+    margin: auto;
+  }
+  
+  button {
+    border-radius: 10px;
+    border-color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  #start-btn, #randomize-btn {
+    border-width: 3px;
+  }
+  
+  
+  
+  button:hover, button.selected, button.selected:disabled {
+    background: #ffffff;
+    color: #4289b5; 
+    transform: scale(1.1); /* Button enlarges slightly on hover */
+  }
+  
+  button:disabled {
+    cursor: default;
+    background: none;
+    color: #eee;
+    opacity: 0.5;
+  }
+  
+  .game {
+    margin: 80px auto 20px;
+    width: 100%;
+  }
+  
+  .board-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .board {
+    position: relative;
+    margin: 0px 0px 20px;
+    width: 400px;
+    height: 400px;
+    padding: 0px 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);  
+    grid-template-rows: repeat(10, 1fr);
+  }
+  
+  .board div {
+    position: relative;
+    box-sizing: border-box;      
+    background: #f6f8f9;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    transition: opacity 1.0s;
+  }
+  
+  .board div.hit {
+    background: #9e0f10;
+    transition: background-color 0.1s;
+  }
+  
+  .board div.miss {
+    background: #4289b5;
+    transition: background-color 0.1s;
+  }
+  
+  
+  
+  .board div.ship {
+    background: #333;
+    transition: background-color 0.1s;
+  }
+  
+  .panel {
+    border: 2px solid #333;
+    border-radius: 20px;
+    display: grid;
+    height: 125px;
+    width: 125px;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-template-columns: auto auto; 
+    color: #4289b5;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  
+  .panel > div {
+    height: 20px;
+    line-height: 20px;
+    transition: opacity 0.3s;
+  }
+  
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-label {
+    text-align: center;
+    width: 500px;
+    color: #4289b5;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  
+  .opaque {
+    transition: opacity 1.0s;
+    opacity: 0.5;
+  }
+  

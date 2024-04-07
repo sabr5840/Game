@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Battleship Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <div class="mr-auto" id="div-title">
+            <h1>Battleship game 🚢 ⚓️</h1>
+            <p class="subheading">Try the classic naval combat game online, with a computer as opponent</p> 
+
+        </div>
+        <div class="mr-auto button" id="div-randomize-btn"><button id="randomize-btn">Create Board</button></div>
+        <div class="ml-auto mr-auto button" id="div-start"><button class="hidden" id="start-btn">Start</p>
+        </div>
+    </div>
+    <div class="game">
+        <div class="board-container">
+            <div class="panel hidden" id="player-panel">
+                <div id="player-ship-label-1">Carrier</div><div id="player-ship-count-1">[5]</div>
+                <div id="player-ship-label-2">Battleship</div><div id="player-ship-count-2">[4]</div>
+                <div id="player-ship-label-3">Destroyer</div><div id="player-ship-count-3">[3]</div>
+                <div id="player-ship-label-4">Submarine</div><div id="player-ship-count-4">[3]</div>
+                <div id="player-ship-label-5">Patrol Boat</div><div id="player-ship-count-5">[2]</div>
+            </div>
+            <div id="playerboard" class="board hidden"></div>
+            <div id="enemyboard" class="board hidden"></div>
+            <div class="panel hidden" id="ai-panel">
+                    <div id="ai-ship-label-1">Carrier</div><div id="ai-ship-count-1">[5]</div>
+                    <div id="ai-ship-label-2">Battleship</div><div id="ai-ship-count-2">[4]</div>
+                    <div id="ai-ship-label-3">Destroyer</div><div id="ai-ship-count-3">[3]</div>
+                    <div id="ai-ship-label-4">Submarine</div><div id="ai-ship-count-4">[3]</div>
+                    <div id="ai-ship-label-5">Patrol Boat</div><div id="ai-ship-count-5">[2]</div>
+                </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-label hidden" id="player-footer">Your board</div>
+        <div class="footer-label hidden" id="ai-footer">Opponent's board</div>
+    </div>
+
+    <script src="board.js"></script>
+    <script src="ai.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

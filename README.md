@@ -1,6 +1,8 @@
 
 # Battleship Game
 
+<img width="1427" alt="Skærmbillede 2024-06-20 kl  11 16 32" src="https://github.com/sabr5840/Game/assets/113180288/85f3472f-cb6a-40a0-ba17-8d6ec9ada9d0">
+
 Welcome to the Battleship Game, a classic naval combat game where you face off against the computer in a strategic battle to sink each other's fleets. This project is a web-based version of the traditional board game, allowing players to enjoy the game from their browsers.
 
 Try out the game - [Press Here](https://sabr5840.github.io/Game/)
